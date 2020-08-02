@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+*{
+	padding:0;
+	border:0;
+	
+}
+
+html {
+    background: #fff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*<--------------------- vista 320 --------------------->*/
+
+.header {
+	
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+ ul {
+    list-style: none;
+    overflow: hidden;
+    background-color: #0000EC;
+      a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+ }
+
+.icono {
+    width: 24px;
+    height: 24px;
+    margin: 10px 0 0 16px;
+}
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 20px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: #000;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition:  .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: #000;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #000;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~nav .menu {
+    max-height: 240px;
+    
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.hello {
+	padding-top: 10px;
+    h1 {
+	padding-top: 29px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', monospace;
+    font-size: 36px;
+    width: 80%;
+    color: #060A24;
+	letter-spacing: 0;
+	line-height: 42px;
+    }
+.linea {
+    text-decoration: line-through;
+}
+
+.punto {
+    color: #060A24;
+	
+}
+
+
+.texto {
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: justify;
+    width: 90%;
+    margin-left: 15px;
+    font-size: 14px;
+	color: #060A24;
+	letter-spacing: 0;
+	line-height: 24px;
+    padding-bottom:35px;
+}
+    }
+
+	
+
+.boton{
+	display:flex;
+	justify-content:center;
+
+ button{
+	background-color:#00F3BB ;
+	width:288px;
+	height:48px;
+	margin-bottom:24px;
+    }
+}
+	
+.boton button:hover {
+    color: #ffffff;
+	background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+
+
+#episodios{
+	background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(-6deg);
+    margin-top: 20px;
+
+.episodios{
+	padding: 64px 0 0 16px;
+	font-weight: 400;
+    font-size: 36px;
+    font-family: 'IBM Plex Mono', monospace;
+	font-size: 48px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+}
+
+#episodios>* {
+    transform: skewY(6deg);
+}
+
+.cont_grabacion {
+    display: flex;
+    flex-wrap:  wrap ;
+    padding-left: 28px;
+
+}
+
+.grabacion {
+    width: 92%;
+    height: 232px;
+    margin-top: 11px;
+    border: none;
+}
+
+.grabacion:last-child {
+    padding-bottom:98px;
+}
+
+.img_telefono{
+	width:100%;
+	margin-top: -73px;
+    position: relative;
+}
+
+.texto_nosotros {
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', monospace;
+
+
+ h2 {
+    width: 80%;
+    font-size: 36px;
+    font-weight: 400;
+	color: #060A24;
+	letter-spacing: 0;
+	line-height: 42px;
+    margin-left: 16px;
+    margin-top: 27px;
+    margin-bottom: 0;
+}
+
+ p {
+    text-align: justify;
+    width: 90%;
+    margin-left: 16px;
+	font-size: 14px;
+	color: #060A24;
+	letter-spacing: 0;
+	line-height: 22px;
+}
+}
+.invitadas {
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', monospace;
+    h2 {
+        width: 80%;
+        font-size: 36px;
+        font-weight: 400;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-left: 16px;
+        margin-top: 27px;
+        margin-bottom: 0;
+    
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.algunos{
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', monospace;
+     h2 {
+        width: 80%;
+        font-size: 36px;
+        font-weight: 400;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-left: 16px;
+        margin-top: 27px;
+        margin-bottom: 0;
+    }
+    div {
+        text-align: center;
+        margin-top: 37px;
+    img {
+        justify-content: center;
+
+        
+    }
+    p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        width: 90%;
+        font-size: 24px;
+        font-weight: 400;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 0;
+        margin-top: 13px;
+        text-align: center;
+
+    }
+}
+
+}
+.novedades{
+    font-family: 'IBM Plex Mono', monospace;
+	font-size: 36px;
+	color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+	
+}
+
+#novedades{
+background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+transform: skewY(-6deg);
+    margin-top: 2   0px;
+ h2{
+	padding: 64px 0 0 16px;
+	font-weight: 400;
+	font-size: 36px;
+}
+}
+
+#novedades>* {
+    transform: skewY(6deg);
+}
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', monospace;
+    p {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin-left: 16px;
+        margin-bottom: 0;
+        text-align: center;
+
+    }
+}
+
+	
+/*<--------------------- vista 1000 --------------------->*/
+
+@media screen and (min-width: 1024px) {
+
+	.header .menu-icon {
+		display: none;
+	}
+	
+	.header ul {
+		overflow: unset;
+		background-color: unset;
+	}
+	
+	.header {
+		position:unset;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+  
+	}
+	
+	nav {
+		height: 44px;
+	}
+
+	nav ul {
+		display: flex;
+  		justify-content: space-between;
+	}
+	
+	.header .icono {
+		width: 36px;
+		height: 36px;
+		margin: 22px 0 0 100px;
+	}
+
+    .header .menu {
+    	padding-right:20px;
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+	
+	nav {
+        margin-right: 50px;
+    }
+	
+    .header ul a {
+        font-size: 16px;
+    }
+
+	
+    .header li {
+        float: left;
+    }
+	
+    .header li a {
+        color: #060A24;
+        font-family: 'IBM Plex Mono', monospace;
+        background-color: #fff;
+    }
+	
+    .header a:hover {
+        color: #00F3BB;
+        text-decoration: line-through;
+    }
+	
+    .header a:active {
+        color: #060A24;
+        text-decoration: line-through;
+    }
+	
+    .header .menu-icon {
+        display: none;
+    }
+	
+    nav {
+        height: 44px;
+    }
+    
+	
+    .hello {
+         h1{
+		margin:0;
+		padding-top: 120px;
+		padding-left: 200px;
+		font-size: 64px;
+    }
+	
+	.texto {
+		margin:15px 0;
+		padding-left: 200px;
+		font-size: 16px;
+        padding-bottom:56px;
+       
+        width: 43.6%;
+    }
+	.punto {
+		color: #0000EC;	
+	}
+}
+	.boton{
+		padding-left:200px;	
+		display:flex;
+        justify-content:flex-start;	
+        
+		button{
+		width:226px;
+		height:56px;
+	}
+}
+
+	
+    #episodios{ 
+        width: 100%;
+     .episodios{
+		padding: 106px 0 26px 200px;
+    }
+    .cont_grabacion {
+        margin-left: 6.9%;
+        margin-right: 6.9%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        width: 100%;
+        grid-column-gap: 5%;
+        grid-row-gap: 1.8%;
+
+
+	}
+	
+	.grabacion {
+        display: grid;
+        grid-template-columns: 1fr;
+		width: 100%;
+		margin: 11px 72px 0 0;
+        border: none;
+    }
+	
+	.grabacion:last-child {
+       padding-bottom:232px;
+    }
+}
+	
+	.img_telefono{
+		width:457px;
+		height:660px;
+		margin-top: -100px;
+		position: relative;
+		margin-left: 200px;
+    }
+	
+	.texto_nosotros {
+        margin-left: 720px;
+        margin-top: -30%;
+        padding-bottom: 0;
+       h2 {
+        font-size: 48px;
+        font-weight: 400;
+        margin-left: 0;
+        margin-top: 0;
+    }
+     p {
+        width: 33vw;
+		color: #060A24;
+		font-size: 16px;
+		letter-spacing: 0;
+		line-height: 24px;
+		margin-left: 0;
+    }
+}
+    #invitacomplet {
+        padding-top: 245px;
+     .invitadas {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+     
+        h2{
+         padding-left: 200px;
+         padding-bottom: 36px;
+         grid-column-start: 1 ;
+         grid-column-end: 4 ;
+     }
+     img {
+         width: 100%;
+         height: 364px;
+         
+     }
+    }
+}
+#algunos {
+    padding-top: 64px;
+    padding-bottom: 34px;
+    margin-left: 200px;
+    margin-right: 200px;
+    .algunos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        h2 {
+        padding-bottom: 56px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        }
+    }
+}
+#novedades {
+   .boton{
+       padding-left: 547px;
+   }
+    
+}
+}
+//clickpath!!
